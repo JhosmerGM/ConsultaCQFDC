@@ -1,0 +1,142 @@
+/* Fondo general */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e3a8a;
+}
+
+/* Imagen de fondo */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('documentos/fondow.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #1e3a8a;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Logo con efecto */
+.logo {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Formulario de búsqueda */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1e3a8a;
+    font-size: 1em;
+    color: #1e3a8a;
+    background-color: #f0f8ff;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Botones */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-button {
+    background-color: #2563eb;
+    color: white;
+}
+
+.search-button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+.clear-button {
+    background-color: #d1d5db;
+    color: #1e3a8a;
+}
+
+.clear-button:hover {
+    background-color: #9ca3af;
+    transform: scale(1.05);
+}
+
+/* Resultados */
+#results {
+    margin-top: 20px;
+    text-align: left;
+    color: #1e3a8a;
+}
+
+.result-item {
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado de habilitación */
+.habilitado {
+    color: #2563eb; /* Azul brillante */
+    font-weight: bold;
+}
+
+.no-habilitado {
+    color: #ef4444; /* Rojo */
+    font-weight: bold;
+}
